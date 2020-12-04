@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        height:
+        <input type="number" id="nhapChieuCao" >
+        <br>weight:
+        <input type="number" id="nhapCanNang" value="weight">
+        <br><button type="button" id="BMI" onclick="coverBMI">tinhBMI</button>
+        <p id="ketQua"></p>
+    </form>
+<script>
+    function coverBMI(){
+        let chieuCao=parseFloat(document.getElementById("nhaoChieuCao").value);
+        let canNang=parseFloat(document.getElementById("nhapCanNang").value);
+        let result = document.getElementById("ketQua");
+        if (canNang/chieuCao^2 < 18.5){
+            result.innerText="Underweight";
+        }else if (18.5 <= canNang/chieuCao^2 < 25.0){
+            result.innerText="Normal";
+        }else if (25.0 <= canNang/chieuCao^2 < 30.0){
+            result.innerText="Overweight";
+        }else
+            result.innerText="Obese";
+    }
+</script>
+</body>
+</html>

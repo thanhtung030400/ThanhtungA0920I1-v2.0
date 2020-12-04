@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fibonacciChiaHetCho5() {
+        let a = 0;
+        let b = 1;
+        let c;
+        for (let i = 0; i < 100; i++){
+            c = a + b;
+            a = b;
+            b = c;
+            if (a % 5 == 0){
+                document.writeln(a)
+                break;
+            }
+        }
+    }
+    fibonacciChiaHetCho5();
+</script>
+</body>
+</html>

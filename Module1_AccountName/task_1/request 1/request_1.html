@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label for="fullname">Fullname:</label>
+    <input type="text" id="fullName" onblur="convertName()"><br>
+
+    <label for="ssn">Ssn:</label>
+    <input type="number" id="ssn"><br>
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email"><br>
+
+    <label for="address"> Address:</label>
+    <input type="address" id="address"><br>
+
+    <label form="customerType">Customer class:</label>
+    <select id="customerType">
+        <option value="diamond">Diamond</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="member">Member</option>
+    </select><br>
+
+    <label form="discount">Discount</label>
+    <input type="number" id="discount" value="">%<br>
+
+    <label for="peopleNum">Num of people:</label>
+    <input type="number" id="peopleNum"><br>
+
+    <label for="dayNum">Num of days:</label>
+    <input type="number" id="dayNum" value=""><br>
+
+    <label for="typeService">Type service:</label>
+    <select id="typeService">
+        <option value="500">Villa</option>
+        <option value="300">House</option>
+        <option value="100">Room</option>
+    </select><br>
+
+    <label for="roomType">Type room:</label>
+    <select id="roomType">
+        <option value="vip">V.I.P</option>
+        <option value="business">Business</option>
+        <option value="normal">Normal</option>
+    </select><br>
+
+</form>
+<button type="button" onclick="addHtmlTableRow();">Add</button>
+<!--<button type="button" onclick="editHtmlTbleSelectedRow();">Edit</button>-->
+<!--<button type="button" onclick="removeSelectedRow();">Remove</button>-->
+<table id="table" border="1">
+    <tr>
+        <th>Full name</th>
+        <th>Ssn</th>
+        <th>Birthday</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Customer class</th>
+        <th>Discount</th>
+        <th>Num of people</th>
+        <th>Num of days:</th>
+        <th>Type service:</th>
+        <th>Type room:</th>
+        <th>    </th>
+        <th>    </th>
+        <th>    </th>
+    </tr>
+</table>
+<div>
+    <!--    <p id="resultName"></p>-->
+    <!--    <p id="resultId"></p>-->
+    <!--    <p id="resultBirthday"></p>-->
+    <!--    <p id="resultAddress"></p>-->
+    <!--    <p id="resultEmail"></p>-->
+    <!--    <p id="resultCustomer"></p>-->
+    <!--    <p id="resultDiscount"></p>-->
+    <!--    <p id="resultQuantity"></p>-->
+    <!--    <p id="resultRentDays"></p>-->
+    <!--    <p id="resultService"></p>-->
+    <!--    <p id="resultRoom"></p>-->
+    <p id="resultPrice"></p>
+</div>
+<script>
+    let rIndex,
+        table = document.getElementById("table");
+
+
+
+
+    // edit format fulllname
+
+    function convertName() {
+
+       let tempName = "";
+       let fullname = document.getElementById("fullName").value;
+       fullname = fullname.trim().toLowerCase();
+       for (let i = 0; i < fullname.length; i++) {
+           if (fullname.charAt(i) === " " && fullname.charAt(i + 1) === " ") {
+               continue;
+           }
+
+           if (i === 0 || fullname.charAt(i - 1) === " ") {
+               tempName += fullname.charAt(i).toUpperCase();
+               continue;
+           }
+           tempName += fullname.charAt(i);
+       }
+       document.getElementById("fullName").value = tempName;
+    }
+    // check the empty input
+    function checkEmptyInput() {
+        let isEmpty = false,
+            fullName = document.getElementById("fullName").value,
+            ssn = document.getElementById("ssn").value,
+            birthday = document.getElementById("birthday").value,
+            email = document.getElementById("email").value,
+            emailValid = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/, // check email is valid or not
+            address = document.getElementById("address").value,
+            customerType = document.getElementById("customerType").value,
+            discount = document.getElementById("discount").value,
+            peopleNum = document.getElementById("peopleNum").value,
+            dayNum = document.getElementById("dayNum").value,
+            typeService = document.getElementById("typeService").value,
+            roomType = document.getElementById("roomType").value;
+
+
+        if (fullName === "") {
+            alert("Fullname Cannot Be Empty");
+            isEmpty = true;
+        } else if (ssn === "") {
+            alert("ssn number Cannot Be Empty");
+            isEmpty = true;
+        } else if (birthday === "") {
+            alert("Birthday Cannot Be Empty");
+            isEmpty = true;
+        } else if (email === "") {
+            alert("Email Cannot Be Empty");
+            isEmpty = true;
+        } else if (address === "") {
+            alert("Address Cannot Be Empty");
+            isEmpty = true;
+        } else if (customerType === "") {
+            alert(" customer type Cannot Be Empty");
+            isEmpty = true;
+        } else if (discount === "") {
+            alert("discount Cannot Be Empty");
+            isEmpty = true;
+        } else if (peopleNum === "") {
+            alert("people num Cannot Be Empty");
+            isEmpty = true;
+        } else if (dayNum === "") {
+            alert("day num Cannot Be Empty");
+            isEmpty = true;
+        } else if (typeService === "") {
+            alert("Cannot Be Empty");
+            isEmpty = true;
+        } else if (roomType === "") {
+            alert("Cannot Be Empty");
+            isEmpty = true;
+        }
+
+        if (email.match(emailValid)){
+        }else {
+            alert("please enter your valid email");
+            isEmpty = true;
+        }
+
+        if (ssn > 99999999 && ssn < 1000000000) {     // id is xxxxxxxxx number format
+            alert("please enter your valid ssn number");
+            isEmpty = true;
+        } else if (peopleNum < 0) {
+            alert("please enter your valid number of people");
+            isEmpty = true;
+        } else if (dayNum < 0) {
+            alert("please enter your valid number of days");
+            isEmpty = true;
+        }
+
+        return isEmpty;
+    }
+
+
+
+
+
+
+
+
+    // add Row
+    function addHtmlTableRow() {
+        // get the table by id
+        // create a new row and cells
+        // get value from input text
+        // set the values into row cell's
+        if (!checkEmptyInput()) {
+            let newRow = table.insertRow(table.length),
+                cell1 = newRow.insertCell(0),
+                cell2 = newRow.insertCell(1),
+                cell3 = newRow.insertCell(2),
+                cell4 = newRow.insertCell(3),
+                cell5 = newRow.insertCell(4),
+                cell6 = newRow.insertCell(5),
+                cell7 = newRow.insertCell(6),
+                cell8 = newRow.insertCell(7),
+                cell9 = newRow.insertCell(8),
+                cell10 = newRow.insertCell(9),
+                cell11 = newRow.insertCell(10),
+                cell12 = newRow.insertCell(11),
+                cell13 = newRow.insertCell(12),
+                cell14 = newRow.insertCell(13),
+
+
+                fullName = document.getElementById("fullName").value,
+                ssn = document.getElementById("ssn").value,
+                birthday = document.getElementById("birthday").value,
+                email = document.getElementById("email").value,
+                address = document.getElementById("address").value,
+                customerType = document.getElementById("customerType").value,
+                discount = document.getElementById("discount").value,
+                peopleNum = document.getElementById("peopleNum").value,
+                dayNum = document.getElementById("dayNum").value,
+                typeService = document.getElementById("typeService").value,
+                roomType = document.getElementById("roomType").value;
+
+
+            cell1.innerHTML = fullName;
+            cell2.innerHTML = ssn;
+            cell3.innerHTML = birthday;
+            cell4.innerHTML = email;
+            cell5.innerHTML = address;
+            cell6.innerHTML = customerType;
+            cell7.innerHTML = discount;
+            cell8.innerHTML = peopleNum;
+            cell9.innerHTML = dayNum;
+            cell10.innerHTML = typeService;
+            cell11.innerHTML = roomType;
+            cell12.innerHTML = `<button type="button" onclick="editHtmlTbleSelectedRow(this);">Edit</button>`;
+            cell13.innerHTML = `<button type="button" onclick="removeSelectedRow(this);">Remove</button>`;
+            cell14.innerHTML = `<button type="button" id="resultPrice" onclick="resultPrice();">Total</button>`;
+
+
+            // call the function to set the event to the new row
+            selectedRowToInput();
+        }
+    }
+
+    // display selected row data into input text
+    function selectedRowToInput() {
+
+        let discount = document.getElementById("discount").value,
+            dayNum = document.getElementById("dayNum").value,
+            typeService = document.getElementById("typeService").value;
+
+        let price = parseInt(typeService) * parseInt(dayNum) * (1 - discount / 100);
+        let resultPrice = document.getElementById("resultPrice").value;
+        //
+        alert(price);
+
+        for (let i = 1; i < table.rows.length; i++) {
+            table.rows[i].onclick = function () {
+                // get the seected row index
+                rIndex = this.rowIndex;
+                document.getElementById("fullName").value = this.cells[0].innerHTML;
+                document.getElementById("ssn").value = this.cells[1].innerHTML;
+                document.getElementById("birthday").value = this.cells[2].innerHTML;
+                document.getElementById("email").value = this.cells[3].innerHTML;
+                document.getElementById("address").value = this.cells[4].innerHTML;
+                document.getElementById("customerType").value = this.cells[5].innerHTML;
+                document.getElementById("discount").value = this.cells[6].innerHTML;
+                document.getElementById("peopleNum").value = this.cells[7].innerHTML;
+                document.getElementById("dayNum").value = this.cells[8].innerHTML;
+                document.getElementById("typeService").value = this.cells[9].innerHTML;
+                document.getElementById("roomType").value = this.cells[10].innerHTML;
+            }
+        }
+
+    }
+
+    selectedRowToInput();
+
+    function editHtmlTbleSelectedRow() {
+        let fullName = document.getElementById("fullName").value,
+            ssn = document.getElementById("ssn").value,
+            birthday = document.getElementById("birthday").value,
+            email = document.getElementById("email").value,
+            address = document.getElementById("address").value,
+            customerType = document.getElementById("customerType").value,
+            discount = document.getElementById("discount").value,
+            peopleNum = document.getElementById("peopleNum").value,
+            dayNum = document.getElementById("dayNum").value,
+            typeService = document.getElementById("typeService").value,
+            roomType = document.getElementById("roomType").value;
+        if (!checkEmptyInput()) {
+            table.rows[rIndex].cells[0].innerHTML = fullName;
+            table.rows[rIndex].cells[1].innerHTML = ssn;
+            table.rows[rIndex].cells[2].innerHTML = birthday;
+            table.rows[rIndex].cells[3].innerHTML = email;
+            table.rows[rIndex].cells[4].innerHTML = address;
+            table.rows[rIndex].cells[5].innerHTML = customerType;
+            table.rows[rIndex].cells[6].innerHTML = discount;
+            table.rows[rIndex].cells[7].innerHTML = peopleNum;
+            table.rows[rIndex].cells[8].innerHTML = dayNum;
+            table.rows[rIndex].cells[9].innerHTML = typeService;
+            table.rows[rIndex].cells[10].innerHTML = roomType;
+        }
+        let price = parseInt(typeService) * parseInt(dayNum) * (1 - discount / 100);
+        let resultPrice = document.getElementById("resultPrice");
+        // resultPrice.innerText = "Total price: " + price + "$";
+        alert(price)
+    }
+
+    function removeSelectedRow() {
+        if (confirm("bạn có muốn xóa " + table.rows[rIndex].cells[10].innerHTML + " này hay không?")) {
+            table.deleteRow(rIndex);
+            // clear input text;
+            document.getElementById("fullName").value = "";
+            document.getElementById("ssn").value = "";
+            document.getElementById("birthday").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("customerType").value = "";
+            document.getElementById("discount").value = "";
+            document.getElementById("peopleNum").value = "";
+            document.getElementById("typeService").value = "";
+            document.getElementById("roomType").value = "";
+            if (confirm("bạn có muốn xóa " + table.rows[rIndex].cells[10].innerHTML + " này hay không?")) {
+                listStudent.splice(i, 1);
+                displayStudent();
+            }
+        }
+    }
+
+    // function resultPrice() {
+    //     let price = parseInt(typeService) * parseInt(dayNum) * (1 - discount / 100);
+    //     let resultPrice = document.getElementById("resultPrice");
+    //     // resultPrice.innerText = "Total price: " + price + "$";
+    //     alert(price);
+    //
+    // }
+
+    // function submit() {
+    //     let name = document.getElementById("fullname");
+    //     let cmnd = document.getElementById("ssn");
+    //     let sinhNhat = document.getElementById("birthday");
+    //     let email = document.getElementById("email");
+    //     let diaChi = document.getElementById("address");
+    //     let kieuKhach = document.getElementById("customerType");
+    //     let giamGia = document.getElementById("discount");
+    //     let soKhach =document.getElementById("peopleNum");
+    //     let soNgay = document.getElementById("dayNum");
+    //     let kieuDichVu = document.getElementById("typeService");
+    //     let kieuPhong = document.getElementById("roomType");
+    //
+    //     let nameProduct = [];
+    //     function displayProduct() {
+    //         document.body.innerHTML = ""
+    //         temp += "<table>"
+    //         for (let i = 0; i < nameProduct.length; i++) {
+    //             temp += "<tr>"
+    //             temp += "<td>" + nameProduct[i] + "</td>";
+    //             temp += "<td><button onclick='editProduct(" + i + ")'>Edit</button></td>";
+    //             temp += "<td><button onclick='deleteProduct(" + i + ")'>Delete</button></td>";
+    //             temp += "<tr>"
+    //         }
+    //         temp += "</table>"
+    //         document.write(temp)
+    //     }
+    //     let resultName = document.getElementById("resultName");
+    //     document.write("fullname :" + name.value);
+    //     function editProduct(index) {
+    //         // edit bằng thông báo prompt
+    //         let hoTen = prompt("Nhap tên san pham khac", nameProduct[index]);
+    //         nameProduct[index] = hoTen;
+    //     }
+    // let resultId = document.getElementById("resultId");
+    // resultId.innerText = "Ssn number: " + cmnd.value;
+    // let resultBirthday = document.getElementById("resultBirthday");
+    // resultBirthday.innerText = "Day of birth: " + sinhNhat.value;
+    // let resultAddress = document.getElementById("resultAddress");
+    // resultAddress.innerText = "Address: " + diaChi.value;
+    // let resultEmail = document.getElementById("resultEmail");
+    // resultEmail.innerText = "Email: " + email.value;
+    // let resultCustomer = document.getElementById("resultCustomer");
+    // resultCustomer.innerText = "Customer class: " + kieuKhach.value;
+    // let resultDiscount = document.getElementById("resultDiscount");
+    // resultDiscount.innerText = "Discount: " + giamGia.value;
+    // let resultQuantity = document.getElementById("resultQuantity");
+    // resultQuantity.innerText = "No of customer: " + soKhach.value;
+    // let resultRentDays = document.getElementById("resultRentDays");
+    // resultRentDays.innerText = "Days rent: " + soNgay.value;
+    // let resultService = document.getElementById("resultService");
+    // resultService.innerText = "type of service: " + kieuDichVu.value;
+    // let resultRoom = document.getElementById("resultRoom");
+    // resultRoom.innerText = "Type of room: " + kieuPhong.value;
+    //
+    // let price = parseInt(kieuDichVu.value) * parseInt(soNgay.value) * (1 - giamGia.value/100);
+    // let resultPrice = document.getElementById("resultPrice");
+    // resultPrice.innerText = "Total price: " + price + "$";
+
+
+</script>
+</body>
+
+</html>

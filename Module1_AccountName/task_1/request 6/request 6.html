@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Customer {
+
+        constructor(fullName, ssn, birthday, email, address, customerType, discount, peopleNum, dayNum , typeService, roomType) {
+            this.fullName = fullName;
+            this.ssn = ssn;
+            this.birthday = birthday;
+            this.email = email;
+            this.address = address;
+            this.customerType = customerType;
+            this.discount = discount;
+            this.peopleNum = peopleNum;
+            this.dayNum = dayNum;
+            this.typeService = typeService;
+            this.roomType = roomType;
+
+        }
+        getFullName() {
+            return this.fullName;
+        }getSsn(){
+            return this.ssn;
+        }getBirthday(){
+            return this.birthday;
+        }getEmail(){
+            return this.email;
+        }getAddress(){
+            return this.address;
+        }getCustomerType(){
+            return this.customerType;
+        }getDiscount(){
+            return this.discount;
+        }getPeopleNum(){
+            return this.peopleNum;
+        }getDayNum(){
+            return this.dayNum;
+        }getTypeService(){
+            return this.typeService;
+        }getRoomType(){
+            return this.roomType;
+        }
+
+        roomCost() {
+            // let roomPay = this.typeService * this.dayNum * (1 - this.discount / 100);
+            // document.write()
+            // return roomPay;
+        }
+    }
+
+
+
+    let listStudent = [];
+    listStudent.push(new Customer("Hai", 12345678, "01/02/1999", "qw@gmail.com", "Quang Nam", "diamond", 30, 5, 6, 500, "vip"));
+    listStudent.push(new Customer("Hai1", 12345678, "01/02/1999", "qw@gmail.com", "Quang Nam", "diamond", 50, 2, 7, 300, "vip"));
+    listStudent.push(new Customer("Hai2", 12345678, "01/02/1999", "qw@gmail.com", "Quang Nam", "diamond", 30, 1, 8, 500, "vip"));
+    listStudent.push(new Customer("Hai3", 12345678, "01/02/1999", "qw@gmail.com", "Quang Nam", "diamond", 50, 6, 9, 300, "vip"));
+    function displayStudent() {
+        document.body.innerHTML="";
+        let temp ="<table border='1'>";
+        temp+="<tr>";
+        temp+="<th width='100px'>Full name</th>";
+        temp+="<th width='100px'>Ssn</th>";
+        temp+="<th width='100px'>Birthday</th>";
+        temp+="<th width='100px'>Email</th>";
+        temp+="<th width='100px'>Address</th>";
+        temp+="<th width='100px'>Customer class</th>";
+        temp+="<th width='100px'>Discount</th>";
+        temp+="<th width='100px'>Num of people</th>";
+        temp+="<th width='100px'>Num of days</th>";
+        temp+="<th width='100px'>Type service:</th>";
+        temp+="<th width='100px'>Type room:</th>";
+        temp+="</tr>";
+        temp+="<div><p id='resultPrice' ></p></div>"
+        for(let i= 0;i<listStudent.length;i++){
+            temp+="<tr>";
+            temp+="<td>"+listStudent[i].getFullName()+"</td>";
+            temp+="<td>"+listStudent[i].getSsn()+"</td>";
+            temp+="<td>"+listStudent[i].getBirthday()+"</td>";
+            temp+="<td>"+listStudent[i].getEmail()+"</td>";
+            temp+="<td>"+listStudent[i].getAddress()+"</td>";
+            temp+="<td>"+listStudent[i].getCustomerType()+"</td>";
+            temp+="<td>"+listStudent[i].getDiscount()+"</td>";
+            temp+="<td>"+listStudent[i].getPeopleNum()+"</td>";
+            temp+="<td>"+listStudent[i].getDayNum()+"</td>";
+            temp+="<td>"+listStudent[i].getTypeService()+"</td>";
+            temp+="<td>"+listStudent[i].getRoomType()+"</td>";
+
+            temp+="<td><button onclick='resultPrice("+i+")'>Price</button></td>";
+            temp+="<td><button onclick='changeStudent("+i+")'>Edit </button></td>";
+            temp+="<td><button onclick='deleteStudent("+i+")'>Delete </button></td>";
+            temp+="</tr>";
+
+
+
+
+
+        }
+        temp+="</table>";
+        temp+="<button onclick='addStudent()'>Add Student 1</button>"
+        document.writeln(temp);
+
+
+
+    }
+    function resultPrice(i) {
+        let price = parseInt(listStudent[i].getTypeService()) + parseInt(listStudent[i].getDayNum()) + parseInt(listStudent[i].getDiscount());
+        alert(price)
+
+    }
+    function addStudent() {
+        document.body.innerHTML="";
+        let temp = "Full name: <input type='text' id='fullname'><br>";
+        temp+="Ssn: <input type='number' id='ssn'><br>";
+        temp+="Birthday: <input type='date' id='birthday' name='birthday'><br>";
+        temp+="Email: <input type='email' id='email'><br>";
+        temp+="Address: <input type='address' id='address'><br>";
+        temp+=":Customer class: <select id='customerType'>";
+        temp+="<option value='diamond'>Diamond</option>";
+        temp+="<option value='platinum'>Platinum</option>";
+        temp+="<option value='gold'>Gold</option>";
+        temp+="<option value='silver'>Silver</option>";
+        temp+="<option value='member'>Member</option>";
+        temp+="</select><br>";
+        temp+="Discount: <input type='number' id='discount' value='number'>%<br>";
+        temp+="Num of people: <input type='number' id='peopleNum'><br>";
+        temp+="Num of days: <input type='number' id='dayNum' value='number'><br>";
+        temp+="Type service: <select id='typeService'>";
+        temp+="<option value='500'>Villa</option>";
+        temp+="<option value='300'>House</option>";
+        temp+="<option value='100'>Room</option>";
+        temp+="</select><br>";
+        temp+="Type room <select id='roomType'>";
+        temp+="<option value='vip'>V.I.P</option>";
+        temp+="<option value='business'>Business</option>";
+        temp+="<option value='normal'>Normal</option>";
+        temp+="</select><br>";
+        temp+="<button onclick='successAddStudent()'>Add Student 2</button>"
+        document.writeln(temp);
+    }
+    function successAddStudent() {
+        let fullName = document.getElementById("fullname").value;
+        let ssn = document.getElementById("ssn").value;
+        let birthday = document.getElementById("birthday").value;
+        let email = document.getElementById("email").value;
+        let address = document.getElementById("address").value;
+        let customerType = document.getElementById("customerType").value;
+        let discount = document.getElementById("discount").value;
+        let peopleNum = document.getElementById("peopleNum").value;
+        let dayNum = document.getElementById("dayNum").value;
+        let typeService = document.getElementById("typeService").value;
+        let roomType = document.getElementById("roomType").value;
+        listStudent.push(new Customer(fullName, ssn, birthday, email, address, customerType, discount, peopleNum, dayNum , typeService, roomType));
+        displayStudent();
+    }
+    function changeStudent(i) {
+        document.body.innerHTML="";
+        let temp = "Full name: <input type='text' id='fullname' value='"+listStudent[i].getFullName()+"'><br>";
+
+        temp+="Ssn: <input type='number' id='ssn' value='"+listStudent[i].getSsn()+"'><br>";
+        temp+="Birthday: <input type='date' id='birthday' name='birthday' value='"+listStudent[i].getBirthday()+"'><br>";
+        temp+="Email: <input type='email' id='email' value='"+listStudent[i].getEmail()+"'><br>";
+        temp+="Address: <input type='address' id='address' value='"+listStudent[i].getAddress()+"'><br>";
+        temp+=":Customer class: <select id='customerType' value='"+listStudent[i].getCustomerType()+"'>";
+        temp+="<option value='diamond'>Diamond</option>";
+        temp+="<option value='platinum'>Platinum</option>";
+        temp+="<option value='gold'>Gold</option>";
+        temp+="<option value='silver'>Silver</option>";
+        temp+="<option value='member'>Member</option>";
+        temp+="</select><br>";
+        temp+="Discount: <input type='number' id='discount' value='"+listStudent[i].getDiscount()+"'>%<br>";
+        temp+="Num of people: <input type='number' id='peopleNum' value='"+listStudent[i].getPeopleNum()+"'><br>";
+        temp+="Num of days: <input type='number' id='dayNum' value='"+listStudent[i].getDayNum()+"'><br>";
+        temp+="Type service: <select id='typeService' value='"+listStudent[i].getTypeService()+"'>";
+        temp+="<option value='500'>Villa</option>";
+        temp+="<option value='300'>House</option>";
+        temp+="<option value='100'>Room</option>";
+        temp+="</select><br>";
+        temp+="Type room <select id='roomType' value='"+listStudent[i].getRoomType()+"'>";
+        temp+="<option value='vip'>V.I.P</option>";
+        temp+="<option value='business'>Business</option>";
+        temp+="<option value='normeal'>Normal</option>";
+        temp+="</select><br>";
+        temp+="<button onclick='successEditStudent("+i+")'>Edit Student</button>"
+
+
+        document.writeln(temp);
+    }
+    function successEditStudent(i) {
+
+        let fullName = document.getElementById("fullname").value;
+        let ssn = document.getElementById("ssn").value;
+        let birthday = document.getElementById("birthday").value;
+        let email = document.getElementById("email").value;
+        let address = document.getElementById("address").value;
+        let customerType = document.getElementById("customerType").value;
+        let discount = document.getElementById("discount").value;
+        let peopleNum = document.getElementById("peopleNum").value;
+        let dayNum = document.getElementById("dayNum").value;
+        let typeService = document.getElementById("typeService").value;
+        let roomType = document.getElementById("roomType").value;
+        listStudent[i] = new Customer(fullName, ssn, birthday, email, address, customerType, discount, peopleNum, dayNum , typeService, roomType);
+
+        displayStudent();
+    }
+    function deleteStudent(i) {
+        if(confirm("bạn có muốn xóa "+listStudent[i].getFullName()+" này hay không?")) {
+            listStudent.splice(i,1);
+            displayStudent();
+        }
+    }
+    displayStudent();
+</script>
+</body>
+</html>

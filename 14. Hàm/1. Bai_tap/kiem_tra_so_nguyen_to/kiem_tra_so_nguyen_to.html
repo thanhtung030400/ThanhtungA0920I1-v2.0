@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(){
+        let n = prompt("press number:");
+        let flag = true;
+        if (n <2 ){
+            flag = false;
+        }else{
+            for (let i= 2;i < 10000; i++) {
+                if (n % i ==0){
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag == true){
+            document.write(n+ "prime");
+        }else{
+            document.write(n + "not prime");
+        }
+    }isPrime()
+</script>
+</body>
+</html>

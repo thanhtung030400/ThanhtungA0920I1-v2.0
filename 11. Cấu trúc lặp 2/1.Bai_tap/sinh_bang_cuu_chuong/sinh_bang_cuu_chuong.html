@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("<table width=100% style='text-align: center' border='1'>")
+    for (let i = 1; i <= 9; i++) {
+        document.write("<tr>");
+        for (let j = 2  ; j <= 9 ; j++) {
+            document.writeln("<td>" + j + " x " + i + " = " + i * j);
+            document.write("</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>
+</html>

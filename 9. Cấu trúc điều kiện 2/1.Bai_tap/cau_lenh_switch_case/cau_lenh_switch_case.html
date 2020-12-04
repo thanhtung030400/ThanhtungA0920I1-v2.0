@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" value="" id="nhapSo">
+    <button type="button" id="tinhToan" onclick="coverCalculator()">tinh so ngay</button>
+    <p value="" id="ketqua"></p>
+</form>
+<script>
+    function coverCalculator() {
+        let result = document.getElementById("ketqua");
+        let press = parseInt(document.getElementById("nhapSo").value);
+        switch (press) {
+            case 1:
+            case 3:
+            case 5:
+            case 8:
+            case 10:
+            case 12:
+                result.innerText="Thang"+ press +"co 31 ngay";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                result.innerText="Thang"+ press +"co 30 ngay";
+                break;
+            case 2:
+                result.innerText="Thang"+ press +"co 28 hoac  29 ngay";
+                break;
+            default:
+                result.innerText="ban nhap sai so";
+        }
+    }
+
+</script>
+</body>
+</html>

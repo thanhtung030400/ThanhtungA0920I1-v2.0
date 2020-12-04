@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: flex;">
+    <div id="a" style=" width: 250px;"><img src="anh1/anh1a.jpg" onclick="changeImageA()" id="gunA" width="250 px" height="600 px"></div>
+    <img src="anh1/anh1b.jpg" onclick="changeImageB()" id="gunB" width="250 px" height="600 px">
+    <img src="anh1/anh1c.jpg" id="gunC" onclick="changeImageC()" width="250 px" height="600 px">
+    <img src="anh1/anh1d.jpg" id="gunD" onclick="changeImageD()" width="250 px" height="600 px">
+</div>
+</body>
+<script>
+    let imageA = document.getElementById("gunA");
+    let imageB = document.getElementById("gunB");
+    let imageC = document.getElementById("gunC");
+    let imageD = document.getElementById("gunD");
+    function changeImageA() {
+        if(imageA.getAttribute("src") ==="anh1/anh1a.jpg") {
+            imageA.src = "anh2/anh2a.jpg";
+        } else if(imageA.getAttribute("src") ==="anh2/anh2a.jpg") {
+            imageA.src = "anh3/anh3a.jpg";
+        } else {
+            imageA.src = "anh1/anh1a.jpg";
+        }
+        check();
+    }
+    function changeImageB() {
+            if(imageB.getAttribute("src") ==="anh1/anh1b.jpg") {
+            imageB.src = "anh2/anh2b.jpg";
+        } else if(imageB.getAttribute("src") ==="anh2/anh2b.jpg") {
+            imageB.src = "anh3/anh3b.jpg";
+        } else {
+            imageB.src = "anh1/anh1b.jpg";
+        }
+        check();
+    }
+    function changeImageC() {
+        if (imageC.getAttribute("src") === "anh1/anh1c.jpg") {
+            imageC.src = "anh2/anh2c.jpg";
+        } else if (imageC.getAttribute("src") === "anh2/anh2c.jpg") {
+            imageC.src = "anh3/anh3c.jpg";
+        } else {
+            imageC.src = "anh1/anh1c.jpg"
+        }
+        check();
+    }
+    function changeImageD(){
+        if (imageD.getAttribute("src") ==="anh1/anh1d.jpg") {
+            imageD.src = "anh2/anh2d.jpg";
+        }else if (imageD.getAttribute("src") === "anh2/anh2d.jpg") {
+            imageD.src = "anh3/anh3d.jpg";
+        }else{
+            imageD.src = "anh1/anh1d.jpg";
+        }
+        check();
+    }
+    function check() {
+        if(imageA.getAttribute("src")==="anh1/anh1a.jpg"&&imageB.getAttribute("src")==="anh1/anh1d.jpg") {
+            document.getElementById("a").style.border= "thick solid blue";
+        }
+    }
+</script>
+</html>

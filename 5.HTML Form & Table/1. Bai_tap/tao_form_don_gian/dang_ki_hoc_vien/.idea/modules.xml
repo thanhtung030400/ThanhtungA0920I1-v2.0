@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/dang_ki_hoc_vien.iml" filepath="$PROJECT_DIR$/.idea/dang_ki_hoc_vien.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/tao_form_lay_survey_khach_hang.iml" filepath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/tao_form_lay_survey_khach_hang.iml" />
+    </modules>
+  </component>
+</project>

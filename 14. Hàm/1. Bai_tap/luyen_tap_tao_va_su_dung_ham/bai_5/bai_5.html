@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function soBeNhat() {
+        let a = parseFloat(prompt('nhap vao so thư 1'));
+        let b = parseFloat(prompt('nhap vao so thư 2'));
+        let c = parseFloat(prompt('nhap vao so thư 3'));
+
+        if (a < b || a < c) {
+            alert('so be nhat la ' + a);
+        } else {
+            if (b < a) {
+                alert('so be nhat la ' + b);
+            } else {
+                alert('so be nhat la 7' + c);
+            }
+        }
+    }soBeNhat()
+</script>
+</body>
+</html>

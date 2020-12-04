@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fd88f84-3f2a-4edb-8f8d-954ae2e24dea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../tao_bang_nang_cao/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_bang_nang_cao/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_bang_nang_cao/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_bang_nang_cao/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_bang_nang_cao/tao_bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dang_ki_hoc_vien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../so_thich_cua_ban/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../so_thich_cua_ban/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../so_thich_cua_ban/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../so_thich_cua_ban/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../so_thich_cua_ban/so_thich_cua_ban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../tao_form_lay_survey_khach_hang/tao_formlay_survey_khach_hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../2. Thuc_hanh/tao_form_co_ban/tao_form_co_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4.Git&amp;amp;HTML/1. Thuc_hanh/su_dung_the_HTML_co_ban/.idea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../4.Git&amp;amp;HTML/1. Thuc_hanh/su_dung_the_HTML_co_ban/.idea/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1iG52s2N6NoHgvjpTjnvDmfebFs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tao_bang_nang_cao/tao_bang_nang_cao.html" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fd88f84-3f2a-4edb-8f8d-954ae2e24dea" name="Default Changelist" comment="" />
+      <created>1601520883593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601520883593</updated>
+      <workItem from="1601520884726" duration="15773000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="194" key="FileChooserDialogImpl" timestamp="1601624851083">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="580" y="194" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601624851083" />
+    <state x="528" y="150" key="RollbackChangesDialog" timestamp="1601608942742">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="528" y="150" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601608942742" />
+  </component>
+</project>

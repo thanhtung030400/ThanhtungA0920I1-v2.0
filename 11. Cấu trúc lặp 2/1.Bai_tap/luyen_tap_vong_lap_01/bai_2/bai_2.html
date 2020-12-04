@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function nhietDo() {
+    //     let i= parseFloat(prompt("nhap so nhiet do"));
+    //     while (i > 100){
+    //         document.writeln(i);
+    //         if(i > 100){
+    //             document.writeln("giam nhiet do");
+    //         }else if (i <20){
+    //             document.writeln("tang nhiet do");
+    //         }else {
+    //             document.writeln("nhiet do la" + i);
+    //         }
+    //         i++;
+    //     }
+    // }
+    // nhietDo()
+    function temperature() {
+        let t = parseInt(prompt("Enter temperature now: "));
+
+        if(t > 100){
+            while (t > 100){
+                let d = parseInt(prompt("Decrease temperature: "));
+                t = t - d;
+            }
+            alert(t + " ok");
+        }else if(t < 20){
+            while (t < 20){
+                let i = parseInt(prompt("Increase temperature: "));
+                t = t + i;
+            }
+            alert(t + " ok");
+        }else {
+            alert( t + " ok");
+        }
+    }
+    temperature();
+</script>
+</body>
+</html>

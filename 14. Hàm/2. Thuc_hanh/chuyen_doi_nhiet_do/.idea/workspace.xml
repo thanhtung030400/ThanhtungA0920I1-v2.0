@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64fe83f5-03d5-4888-af54-d21e3928094b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chuye_doi_nhiet_do.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_va_goi_ham/tao_va_goi_ham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su _dung_vong_lap_for/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su _dung_vong_lap_for/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su _dung_vong_lap_for/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su _dung_vong_lap_for/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_do_while/su_dung_vong_lap_do_while.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_do_while/su_dung_vong_lap_do_while.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_long_nhau/su_dung_vong_lap_long_nhau.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_long_nhau/su_dung_vong_lap_long_nhau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_while/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_while/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_while/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10. Cấu trúc lặp 1/1. Thuc_hanh/su_dung_vong_lap_while/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/hien_thi_cac_so_nuyen_to_dau_tien/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/hien_thi_cac_so_nuyen_to_dau_tien/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/hien_thi_cac_so_nuyen_to_dau_tien/hien_thi_cac_so_nguyen_to_dau_tien.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/hien_thi_cac_so_nuyen_to_dau_tien/hien_thi_cac_so_nguyen_to_dau_tien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_3/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_3/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_4/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_4/bai_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_5/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_5/bai_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_6/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_6/bai_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_7/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_7/bai_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_8/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/luyen_tap_vong_lap_01/bai_8/bai_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/sinh_bang_cuu_chuong/sinh_bang_cuu_chuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11. Cấu trúc lặp 2/1.Bai_tap/sinh_bang_cuu_chuong/sinh_bang_cuu_chuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/1. Thuc_hanh/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/1. Thuc_hanh/tao_va_thao_tac_voi_mang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/1. Thuc_hanh/tao_va_thao_tac_voi_mang/tao_va_thao_tac_voi_mang.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/1. Thuc_hanh/tao_va_thao_tac_voi_mang/tao_va_thao_tac_voi_mang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_1/bai_!.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_3/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/luyen_tap_mang_1/bai_3/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_2/bai_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_2/bai_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_3/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/bai_3/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/su_dung_cac_ham_co_san_cua_mang/su_dung_cac_ham_co_san_cua_mang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/tic_tac_toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/tic_tac_toe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/tic_tac_toe/tic_tac_toe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/tic_tac_toe/tic_tac_toe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/ung_dung_vui_F_T_on_T/ung_dung_vui_F_T_on_T.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12. Mảng/2. Bai_tap/ung_dung_vui_F_T_on_T/ung_dung_vui_F_T_on_T.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/game_puzzle/game_puzzle.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/game_puzzle/game_puzzle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/lon_hon_hay_nho_hon_0/lon_hon_hay_nho_hon_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/lon_hon_hay_nho_hon_0/lon_hon_hay_nho_hon_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_3_so_nguyen_va_tim_gia_tri_lon_nhat_cua_ba_so_nguyen_do/nhap_3_so_nguyen_va_tim_gia_tri_lon_nhat_trong_ba_so_nguyen_do.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_3_so_nguyen_va_tim_gia_tri_lon_nhat_cua_ba_so_nguyen_do/nhap_3_so_nguyen_va_tim_gia_tri_lon_nhat_trong_ba_so_nguyen_do.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_vao_hai_so_a_va_b_va_kiem_tra_xem_a_co_chia_het_cho_b_hay_khong/nhap_vao_hai_so_a_va_b_va_kiem_tra_xem_a_co_chia_het_cho_b_hay_khong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_vao_hai_so_a_va_b_va_kiem_tra_xem_a_co_chia_het_cho_b_hay_khong/nhap_vao_hai_so_a_va_b_va_kiem_tra_xem_a_co_chia_het_cho_b_hay_khong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_vao_so_tuoi_va_in_ra_ket_qua_neu_tuoi_hoc_sinh_do_khong_du_dieu_kien_vao_lop_10/nhap_vao_so_tuoi_va_in_ra_ket_qua_neu_tuoi_hoc_sinh_do_khong_du_dieu_kien_vao_lop_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/luyen_tap_cau_truc_dieu_kien_1/nhap_vao_so_tuoi_va_in_ra_ket_qua_neu_tuoi_hoc_sinh_do_khong_du_dieu_kien_vao_lop_10/nhap_vao_so_tuoi_va_in_ra_ket_qua_neu_tuoi_hoc_sinh_do_khong_du_dieu_kien_vao_lop_10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/tinh_chi_so_can_nang_cua_co_the/tinh_chi_so_can_nang_cua_co_the.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/tinh_chi_so_can_nang_cua_co_the/tinh_chi_so_can_nang_cua_co_the.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/ung_dung_do_you_love_me/ung_dung_do_you_love_me.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../9. Cấu trúc điều kiện 2/1.Bai_tap/ung_dung_do_you_love_me/ung_dung_do_you_love_me.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1jHNhXq7VbY7egiyTOhDF6hMRC3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64fe83f5-03d5-4888-af54-d21e3928094b" name="Default Changelist" comment="" />
+      <created>1603457176336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603457176336</updated>
+      <workItem from="1603457177506" duration="780000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="176" y="158" key="FileChooserDialogImpl" timestamp="1603457954524">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="176" y="158" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603457954524" />
+  </component>
+</project>

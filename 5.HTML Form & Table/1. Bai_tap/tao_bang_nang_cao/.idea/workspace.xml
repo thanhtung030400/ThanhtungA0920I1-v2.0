@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73bfee3b-ff8f-4503-acb5-1a4143aa0340" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tao_bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/dang_ki_hoc_vien/dang_ki_hoc_vien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/so_thich_cua_ban/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/so_thich_cua_ban/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/so_thich_cua_ban/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/so_thich_cua_ban/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_don_gian/so_thich_cua_ban/so_thich_cua_ban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_lay_survey_khach_hang/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_lay_survey_khach_hang/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_lay_survey_khach_hang/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_lay_survey_khach_hang/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tao_form_lay_survey_khach_hang/tao_formlay_survey_khach_hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../2. Thuc_hanh/tao_form_co_ban/tao_form_co_ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.Git&amp;amp;HTML/1. Thuc_hanh/su_dung_the_HTML_co_ban/.idea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.Git&amp;amp;HTML/1. Thuc_hanh/su_dung_the_HTML_co_ban/.idea/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1iJSCYInx0yx9gCLGZDqPX7Ghiv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73bfee3b-ff8f-4503-acb5-1a4143aa0340" name="Default Changelist" comment="" />
+      <created>1601624074492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601624074492</updated>
+      <workItem from="1601624075660" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
