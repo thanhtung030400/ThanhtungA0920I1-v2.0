@@ -1,14 +1,14 @@
-package b6.ke_thua.thuc_hanh.doi_tuong_hinh_hoc;
+package b6.ke_thua.bai_tap.circle_va_cylinder;
 
-public class circle_shape {
+public class circle_test {
     public static void main(String[] args) {
         circle circle =new circle();
         System.out.println(circle);
 
-        circle= new circle(3.5);
+        circle =new circle("blue",3.6);
         System.out.println(circle);
 
-        circle= new circle(3.5,"indigo",false);
+        circle = new circle("green",4.0);
         System.out.println(circle);
     }
 }

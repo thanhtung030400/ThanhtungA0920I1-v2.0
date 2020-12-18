@@ -2,7 +2,7 @@ package b4.class_and_object.bai_tap;
 
 import java.util.Scanner;
 
-public class QuadraticEquation {
+class QuadraticEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("nhap a:");
