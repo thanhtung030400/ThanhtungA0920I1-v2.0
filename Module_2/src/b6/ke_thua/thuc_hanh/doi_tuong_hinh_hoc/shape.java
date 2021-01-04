@@ -35,4 +35,10 @@ public class shape {
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
     }
+
+    public void resize(double v) {
+    }
+
+    public void howToColor() {
+    }
 }
