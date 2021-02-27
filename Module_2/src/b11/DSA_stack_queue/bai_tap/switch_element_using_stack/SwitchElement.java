@@ -6,23 +6,23 @@ public class SwitchElement {
     public static void main(String[] args) {
     }
 
-//    public static void stackOfInteger(){
-//        int[] integerNumber = {1, 2, 3, 4};
-//        Stack<Integer> stack = new Stack<>();
-//        stack.push(integerNumber[0]);
-//        stack.push(integerNumber[1]);
-//        stack.push(integerNumber[2]);
-//        stack.push(integerNumber[3]);
-//
-//        int i  = 0;
-//        for (i = 0; i < integerNumber.length; i ++ ){
-//            integerNumber[i] = stack.pop();
-//        }
-//
-//        for ( int x : integerNumber){
-//            System.out.println(x);
-//        }
-//    }
+    public static void stackOfInteger(){
+        int[] integerNumber = {1, 2, 3, 4};
+        Stack<Integer> stack = new Stack<>();
+        stack.push(integerNumber[0]);
+        stack.push(integerNumber[1]);
+        stack.push(integerNumber[2]);
+        stack.push(integerNumber[3]);
+
+        int i  = 0;
+        for (i = 0; i < integerNumber.length; i ++ ){
+            integerNumber[i] = stack.pop();
+        }
+
+        for ( int x : integerNumber){
+            System.out.println(x);
+        }
+    }
 
 
 
