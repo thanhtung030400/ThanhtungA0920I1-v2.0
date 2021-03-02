@@ -4,40 +4,105 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ProductManager {
-    static Scanner scanner = new Scanner(System.in);
-    static List<Product> productList;
+import static b12.Java_collection_framework.bai_tap.ProductManager1.productList;
 
-    static {
-        productList = new ArrayList<Product>();
-        productList.add(new Product(1, "Redbull", 15000));
-        productList.add(new Product(2, "Coca", 13000));
-        productList.add(new Product(3, "Pepsi", 10000));
+public class ProductManager {
+    private static Scanner scanner = new Scanner(System.in);
+    private static  boolean isExit;
+    public static ArrayList<Product> listProduct = new ArrayList<>();
+
+    public static void main(String[] args) {
+        displayMenu();
     }
 
-    public static void showProduct() {
-        for (int i = 0; i < productList.size(); i++) {
-            System.out.println("Id: " + productList.get(i).getId());
-            System.out.println("Name: " + productList.get(i).getName());
-            System.out.println("Price: " + productList.get(i).getPrice());
+    public static void displayMenu() {
+        int choose =0;
+        do {
+            System.out.println("1. Thêm sản phẩm\n" +
+                    "2. Sửa thông tin sản phẩm theo id\n" +
+                    "3. Xoá sản phẩm theo id\n" +
+                    "4. Hiển thị danh sách sản phẩm\n" +
+                    "5. Tìm kiếm sản phẩm theo tên\n" +
+                    "6. Sắp xếp sản phẩm tăng dần, giảm dần theo giá\n" +
+                    "7. thoat");
+
+            System.out.println("chon chuc nang");
+            choose = scanner.nextInt();
+
+            switch (choose){
+                case 1:
+                    addProduct();
+                    break;
+                case 2:
+                    editProduct();
+                    break;
+                case 3:
+                    deleteProduct();
+                    break;
+                case 4:
+                    showProduct();
+                    break;
+                case 5:
+                    searchProduct();
+                    break;
+                case 6:
+                    sortProduct();
+                    break;
+                case 7:
+                    isExit = true;
+                    break;
+
+            }
+            if (isExit){
+            }
+
+        }while (true);
+
+    }
+
+    private static void sortProduct() {
+
+    }
+
+    private static void searchProduct() {
+        System.out.println("enter id of product:");
+        scanner.nextInt();
+        int id = scanner.nextInt();
+//        for (int i = 0 ; i < listProduct.size(); i++){
+//            if (id.equals(listProduct.get(i).getName())){
+//                System.out.println(listProduct.get(i));
+//            }
+        showProduct();
+    }
+
+    private static void showProduct() {
+        for(Product product : listProduct){
+            System.out.println(product);
         }
     }
 
-    public static void editProductById(){
-        System.out.println("enter name of product you want to edit");
-        int id = scanner.nextInt();
-
-    }
-
-
-
-    public static void removeProductById() {
+    private static void deleteProduct() {
         System.out.println("Enter id of product you want remove");
         int id = scanner.nextInt();
-        productList.remove(id);
-
+        listProduct.remove(id);
         showProduct();
-        }
+    }
 
+    private static void editProduct() {
+        System.out.println("Enter id of product you want edit ");
+        int id = scanner.nextInt();
+        showProduct();
+    }
 
+    private static void addProduct() {
+        System.out.println("Enter id");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Enter name of product");
+        String name = scanner.nextLine();
+        System.out.println("Enter price");
+        int price = scanner.nextInt();
+        Product product = new Product(id, name, price);
+        listProduct.add(product);
+    }
 }
