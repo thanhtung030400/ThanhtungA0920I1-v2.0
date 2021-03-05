@@ -1,10 +1,7 @@
 package b12.Java_collection_framework.bai_tap;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
-import static b12.Java_collection_framework.bai_tap.ProductManager1.productList;
 
 public class ProductManager {
     private static Scanner scanner = new Scanner(System.in);
@@ -23,8 +20,9 @@ public class ProductManager {
                     "3. Xoá sản phẩm theo id\n" +
                     "4. Hiển thị danh sách sản phẩm\n" +
                     "5. Tìm kiếm sản phẩm theo tên\n" +
-                    "6. Sắp xếp sản phẩm tăng dần, giảm dần theo giá\n" +
-                    "7. thoat");
+                    "6. Sắp xếp sản phẩm tăng dần theo giá\n" +
+                    "7. Sắp xếp sản phẩm giảm dần theo giá\n" +
+                    "8. thoat");
 
             System.out.println("chon chuc nang");
             choose = scanner.nextInt();
@@ -49,6 +47,9 @@ public class ProductManager {
                     sortProduct();
                     break;
                 case 7:
+                    sortProductLower();
+                    break;
+                case 8:
                     isExit = true;
                     break;
 
@@ -60,19 +61,32 @@ public class ProductManager {
 
     }
 
-    private static void sortProduct() {
+    private static void sortProductLower() {
+        Collections.sort(listProduct, new Comparator<Product>() {
+            @Override
+            public int compare(Product product1, Product product2) {
+                return product1.getName().compareTo(product2.getName());
+            }
+        });
+        for (Product product : listProduct){
+            System.out.println(product);
+        }
+    }
 
+    private static void sortProduct() {
+        Collections.sort(listProduct);
+        System.out.println(listProduct);
     }
 
     private static void searchProduct() {
-        System.out.println("enter id of product:");
-        scanner.nextInt();
-        int id = scanner.nextInt();
-//        for (int i = 0 ; i < listProduct.size(); i++){
-//            if (id.equals(listProduct.get(i).getName())){
-//                System.out.println(listProduct.get(i));
-//            }
-        showProduct();
+        System.out.println("Enter name product you want to search");
+        scanner.nextLine();
+        String nameProduct = scanner.nextLine();
+        for (int i = 0 ; i < listProduct.size(); i++){
+            if (nameProduct.equals(listProduct.get(i).getName())){
+                System.out.println(listProduct.get(i));
+            }
+        }
     }
 
     private static void showProduct() {
@@ -90,8 +104,24 @@ public class ProductManager {
 
     private static void editProduct() {
         System.out.println("Enter id of product you want edit ");
-        int id = scanner.nextInt();
-        showProduct();
+        int idProduct = scanner.nextInt();
+        scanner.nextLine();
+
+        for(int i = 0; i < listProduct.size(); i++){
+            switch (idProduct){
+                case 1:
+                    System.out.println(listProduct.get(i));
+                    System.out.println("Enter the name you want edit");
+                    String name = scanner.nextLine();
+                    listProduct.get(i).setName(name);
+                    System.out.println(listProduct.get(i));
+                case 2:
+                    System.out.println("Enter the price you want edit");
+                    int price = scanner.nextInt();
+                    listProduct.get(i).setPrice(price);
+                    System.out.println(listProduct.get(i));
+            }
+        }
     }
 
     private static void addProduct() {
