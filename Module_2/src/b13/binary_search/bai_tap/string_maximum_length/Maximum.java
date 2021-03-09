@@ -10,7 +10,7 @@ public class Maximum {
         String string = input.nextLine();
 
         LinkedList<Character> max = new LinkedList<>();
-        for (int i = 0; i <  string.length(); i++){
+        for (int i = 0; i<string.length(); i++){
             LinkedList<Character> list= new LinkedList<>();
             list.add(string.charAt(i));
             for (int j=i+1; j < string.length(); j++){
