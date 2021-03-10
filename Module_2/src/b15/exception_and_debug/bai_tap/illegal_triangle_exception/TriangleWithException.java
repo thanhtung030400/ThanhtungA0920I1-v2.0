@@ -21,7 +21,7 @@ public class TriangleWithException {
                 side1 = input.nextDouble();
                 side2 = input.nextDouble();
                 side3 = input.nextDouble();
-                triangle = new Triangle(side1, side2, side3);
+                triangle = new Triangle(side1, side2,   side3);
                 done = true;
             }
             catch (IllegalTriangleException ex) {
@@ -31,14 +31,11 @@ public class TriangleWithException {
             }
         }
 
-
-
-
         System.out.println("Enter a color:  ");
         String color = input.next();
         triangle.setColor(color);
 
-//        System.out.println("Enter true or false for triangle filled: ");
+//        System.out.println("Enter true or false for triangle filled: ");filled
 //        boolean filled = input.nextBoolean();
 //        triangle.setFilled(filled);
 //
