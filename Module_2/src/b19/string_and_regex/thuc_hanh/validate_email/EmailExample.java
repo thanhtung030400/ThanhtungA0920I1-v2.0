@@ -13,7 +13,7 @@ public class EmailExample {
 
     public EmailExample(){
         pattern = Pattern.compile(EMAIL_REGEX);
-    }
+}
 
     public boolean validate(String regex){
         matcher = pattern.matcher(regex);
