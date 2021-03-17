@@ -7,7 +7,7 @@ public class PhoneNumber {
     private static Pattern pattern;
     private Matcher matcher;
 
-    private static final String PHONENUMBER_REGEX = "(\\d\\d)+()";
+    private static final String PHONENUMBER_REGEX = "[(]\\d{2}[)][-][(][0]\\d{9}[)]$";
     public  PhoneNumber(){
         pattern = Pattern.compile(PHONENUMBER_REGEX);
     }
