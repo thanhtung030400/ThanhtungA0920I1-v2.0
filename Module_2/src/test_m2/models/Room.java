@@ -1,10 +1,9 @@
-package Furama_resort2.models;
+package test_m2.models;
 
 public class Room extends Service{
     private ExtraService extraservice;
 
-    public Room(ExtraService extraservice) {
-        this.extraservice = extraservice;
+    public Room() {
     }
 
     public Room(String id, String service, double areaUsed, double rentCost, int numberOfPeople, String typeRent, ExtraService extraservice) {
@@ -23,5 +22,12 @@ public class Room extends Service{
     @Override
     public void showInfor() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "extraservice=" + extraservice +
+                '}'+super.toString();
     }
 }

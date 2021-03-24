@@ -1,6 +1,6 @@
 package b12.Java_collection_framework.bai_tap;
 
-public class Product implements Comparable<Product>{
+public  class Product implements Comparable<Product>{
     private int id;
     private String name;
     private int price;
@@ -11,7 +11,7 @@ public class Product implements Comparable<Product>{
         this.price = price;
     }
 
-    public Product() {
+    public Product(String name, int price) {
     }
 
     public int getId() {
@@ -58,6 +58,7 @@ public class Product implements Comparable<Product>{
             return -1;
         }
     }
+
 
 
 

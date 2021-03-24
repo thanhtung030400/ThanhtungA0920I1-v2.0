@@ -1,4 +1,4 @@
-package Furama_resort2.models;
+package test_m2.models;
 
 public abstract class Service {
     protected String id;

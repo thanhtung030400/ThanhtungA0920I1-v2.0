@@ -1,10 +1,11 @@
-package Furama_resort2.models;
+package test_m2.models;
 
 public class Villa extends Service {
     private String standardRoom;
     private String otherDescription;
     private double areaPool;
     private int numberOfFloors;
+
 
     public Villa(){
     }

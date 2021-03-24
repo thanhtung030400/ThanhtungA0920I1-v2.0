@@ -7,6 +7,7 @@ public class ProductManager {
     private static Scanner scanner = new Scanner(System.in);
     private static  boolean isExit;
     public static ArrayList<Product> listProduct = new ArrayList<>();
+    private static String PRODUCT ="product";
 
     public static void main(String[] args) {
         displayMenu();
@@ -29,7 +30,7 @@ public class ProductManager {
 
             switch (choose){
                 case 1:
-                    addProduct();
+                    addProduct(PRODUCT);
                     break;
                 case 2:
                     editProduct();
@@ -61,6 +62,7 @@ public class ProductManager {
 
     }
 
+
     private static void sortProductLower() {
         Collections.sort(listProduct, new Comparator<Product>() {
             @Override
@@ -90,41 +92,61 @@ public class ProductManager {
     }
 
     private static void showProduct() {
-        for(Product product : listProduct){
-            System.out.println(product);
+        List<Product> list = FileUtils.readFile();
+        for(Product product : list){
+            System.out.println(product.toString());
         }
     }
 
     private static void deleteProduct() {
+        showProduct();
+        List<Product> list = FileUtils.readFile();
         System.out.println("Enter id of product you want remove");
         int id = scanner.nextInt();
-        listProduct.remove(id);
-        showProduct();
+        list.remove(id);
+            FileUtils.writeFile(list,false);
+
     }
 
     private static void editProduct() {
+        List<Product> list = FileUtils.readFile();
         System.out.println("Enter id of product you want edit ");
         int idProduct = scanner.nextInt();
         scanner.nextLine();
 
-        for(int i = 0; i < listProduct.size(); i++){
-            switch (idProduct){
+        for(int i = 0; i < listProduct.size(); i++) {
+            int price = 0;
+            String name = null;
+            switch (idProduct) {
                 case 1:
                     System.out.println(listProduct.get(i));
                     System.out.println("Enter the name you want edit");
-                    String name = scanner.nextLine();
+                    name = scanner.nextLine();
                     listProduct.get(i).setName(name);
                     System.out.println(listProduct.get(i));
                 case 2:
                     System.out.println("Enter the price you want edit");
-                    int price = scanner.nextInt();
+                    price = scanner.nextInt();
                     listProduct.get(i).setPrice(price);
                     System.out.println(listProduct.get(i));
             }
+            Product product = new Product(name, price);
+            listProduct.clear();
+            listProduct.add(product);
+            FileUtils.writeFile(list, true);
         }
     }
+//    CSVReader reader = new CSVReader(new FileReader("old.csv"));
+//    CSVWriter writer = new CSVWriter(new FileWriter("new.csv"));
+//    String [] nextLine;
+//while ((nextLine = reader.readNext()) != null) {
+//        List<String> lineAsList = new ArrayList<String>(Arrays.asList(nextLine));
+//        // Add stuff using linesAsList.add(index, newValue) as many times as you need.
+//        writer.writeNext(lineAsList.toArray());
+//    }
 
-    private static void addProduct() {
+    private static void addProduct(String fileName) {
+        scanner.nextLine();
         System.out.println("Enter id");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -132,7 +154,9 @@ public class ProductManager {
         String name = scanner.nextLine();
         System.out.println("Enter price");
         int price = scanner.nextInt();
-        Product product = new Product(id, name, price);
+        Product product = new Product(id,name,price);
+        listProduct.clear();
         listProduct.add(product);
+        FileUtils.writeFile(listProduct,true);
     }
 }

@@ -232,9 +232,9 @@ public class MainController {
             }else if (fileName.equals(HOUSE)){
                 services= new House();
 
-                ((Villa) services).setStandardRoom(propertiesElement[6]);
-                ((Villa) services).setOtherDescription(propertiesElement[7]);
-                ((Villa) services).setNumberOfFloors(Integer.parseInt(propertiesElement[8]));
+                ((House) services).setStandardRoom(propertiesElement[6]);
+                ((House) services).setOtherDescription(propertiesElement[7]);
+                ((House) services).setNumberOfFloors(Integer.parseInt(propertiesElement[8]));
             }else if (fileName.equals(ROOM)){
                 extraService= new ExtraService(propertiesElement[6],propertiesElement[7], Double.parseDouble(propertiesElement[8]));
                 services = new Room();
