@@ -4,10 +4,7 @@ import test_m2.commons.FileUtils;
 import test_m2.commons.StringUtils;
 import test_m2.models.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
+import java.util.*;
 
 
 public class MainController {
@@ -64,6 +61,8 @@ public class MainController {
             }
         } while (choose >= 1 && choose <= 7);
     }
+
+
 
     private static void showInformationOfEmployee() {
     }
@@ -128,7 +127,7 @@ public class MainController {
             if (isBackToMenu || isExit) {
                 return;
             }
-        } while (choose >= 1 && choose <= 8);
+        } while (choose >= 1 && choose <= 5);
 
     }
 
@@ -140,26 +139,26 @@ public class MainController {
 
         Service services = null;
         ExtraService extraService = null;
-        for (String properties : propertiesService){
-            propertiesElement =properties.split(StringUtils.COMMA);
-            if (fileName.equals(VILLA)){
+        for (String properties : propertiesService) {
+            propertiesElement = properties.split(StringUtils.COMMA);
+            if (fileName.equals(VILLA)) {
                 services = new Villa();
 
                 ((Villa) services).setStandardRoom(propertiesElement[6]);
                 ((Villa) services).setOtherDescription(propertiesElement[7]);
-                ((Villa) services).setAreaPool(Double.parseDouble(propertiesElement[8]);
+                ((Villa) services).setAreaPool(Double.parseDouble(propertiesElement[8]));
                 ((Villa) services).setNumberOfFloors(Integer.parseInt(propertiesElement[9]));
 
-            }else if (fileName.equals(HOUSE)){
+            } else if (fileName.equals(HOUSE)) {
                 services = new House();
 
                 ((House) services).setStanderRoom(propertiesElement[6]);
                 ((House) services).setOtherDescription(propertiesElement[7]);
                 ((House) services).setNumberOfFloor(Integer.parseInt(propertiesElement[8]));
 
-            }else if(fileName.equals(ROOM))
+            } else if (fileName.equals(ROOM)) {
                 extraService = new ExtraService(propertiesElement[6], propertiesElement[7], Double.parseDouble(propertiesElement[8]));
-                services= new Room();
+                services = new Room();
                 ((Room) services).setExtraservice(extraService);
             }
             services.setId(propertiesElement[0]);
@@ -171,20 +170,39 @@ public class MainController {
 
             listOfServices.add(services);
         }
-        return
+        return listOfServices;
     }
 
+
+
     private static void showServiceNotDup(String fileName) {
+        Set<String> setOfService = new TreeSet<>();
+
+        System.out.println("---------------");
+        System.out.println("list of service not duplicate name ");
+
+        for (Service service:readAllServices( fileName)){
+            setOfService.add(service.getService());
+        }
+        for (String name : setOfService){
+            System.out.println(name);
+        }
+
     }
 
     private static void showAllService(String fileName) {
+        System.out.println("-----------");
+        System.out.println("list service");
+        for (Service service : readAllServices(fileName)){
+            service.showInfor();
+        }
 
     }
 
     private static void addNewService() {
         int choose = 0;
         do {
-            System.out.println("Add New Villa\n" +
+            System.out.println("1Add New Villa\n" +
                     "2. Add New House\n" +
                     "3. Add New Room\n" +
                     "4. Back to menu\n" +

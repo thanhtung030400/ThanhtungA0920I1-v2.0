@@ -327,7 +327,7 @@ public class MainController {
         do {
             System.out.println("please input service name");
             serviceName = scanner.nextLine();
-        }while (Validators.isValidRegex(id, Validators.SERVICE_NAME_REGEX));
+        }while (Validators.isValidRegex(serviceName, Validators.SERVICE_NAME_REGEX));
 
         double areaUse = 0;
         do {
