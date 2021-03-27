@@ -209,7 +209,7 @@ public class MainController {
             if (isbackToMenu || isExit){
                 return;
             }
-        }while (choose >= -1 && choose <=5);
+        }while (choose >= 1 && choose <=5);
     }
 
     public static List<Service> readAllServices(String fileName){
