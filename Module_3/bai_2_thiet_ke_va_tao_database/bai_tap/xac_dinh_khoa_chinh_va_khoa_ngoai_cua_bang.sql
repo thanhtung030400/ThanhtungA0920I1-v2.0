@@ -1,11 +1,13 @@
 drop database if exists pratice_pk_fk;
+
 create database pratice_pk_fk;
+
 create table pratice_pk_fk.customers(
 	customer_number int unique not null, 
-    fullname varchar(255),
-    address varchar(255),
-    email varchar(255),
-    phone varchar(255),    
+    fullname varchar(100),
+    address varchar(100),
+    email varchar(100),
+    phone varchar(100),    
     constraint pk_customernumber primary key(customer_number)
 );
 
