@@ -106,5 +106,4 @@ public class CustomerServlet extends HttpServlet {
         }
 
     }
-    Scanner scanner = new Scanner(System.in);
 }
