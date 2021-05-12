@@ -21,8 +21,13 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
         }
         switch (action) {
             case "create":
-                //Lưu thông tin product vào db
                 saveProduct(request, response);
+                break;
+            case "edit":
+                editProduct(request, response);
+                break;
+            case "delete":
+                deleteProduct(request, response);
                 break;
             default:
                 getProductHome(request, response);
@@ -37,9 +42,10 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
         }
         switch (action) {
             case "create":
-                getCreateProduct(request, response); //trả về trang create
+                getCreateProduct(request, response);
                 break;
             case "edit":
+                editProduct(request, response);
                 break;
             case "delete":
                 deleteProduct(request, response);
@@ -48,7 +54,6 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
                 getProductHome(request, response);
         }
     }
-
 
     private void getCreateProduct(HttpServletRequest request, HttpServletResponse response) {
         try {
@@ -90,5 +95,21 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
             e.printStackTrace();
         }
     }
+
+    private void editProduct(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        int id = Integer.parseInt(request.getParameter("id"));
+        String name = request.getParameter("name");
+        int price = Integer.parseInt(request.getParameter("price"));
+
+        Product product = this.productService.findById(id);
+
+        product.setName(name);
+        product.setPrice(price);
+
+        request.setAttribute("productUpdate", product);
+        request.getRequestDispatcher("update.jsp").forward(request, response);
+    }
+
 }
 
