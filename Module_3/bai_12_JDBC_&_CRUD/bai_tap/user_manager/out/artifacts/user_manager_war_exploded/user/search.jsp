@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Search page</title>
@@ -13,6 +14,10 @@
     <link rel="stylesheet" type="text/css" href="/assert/bootstrap4/css/bootstrap.css">
 </head>
 <body>
+<center>
+    <h1>User search</h1>
+
+</center>
 <c:if test="${user != null}">
     <table class="table table-striped table-bordered">
         <h1>Result</h1>

@@ -11,6 +11,8 @@
 <html>
 <head>
     <title>User Management Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assert/bootstrap4/css/bootstrap.css">
 </head>
 <body>
 <center>
@@ -41,6 +43,10 @@
                 </td>
             </tr>
         </c:forEach>
+        <form class="form-inline my-2 my-lg-0" action="search">
+            <input class="form-control mr-sm-2 col-2" type="search" placeholder="Search" aria-label="Search" name="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </table>
 </div>
 </body>

@@ -160,7 +160,10 @@ public class UserDAO implements IUserDAO{
                 String email = resultSet.getString("email");
                 country = resultSet.getString("country");
                 user = new User(id, name, email, country);
+
             }
+
+            rowSearch = statement.executeUpdate() > 0;
 
         } catch (SQLException e) {
             e.printStackTrace();

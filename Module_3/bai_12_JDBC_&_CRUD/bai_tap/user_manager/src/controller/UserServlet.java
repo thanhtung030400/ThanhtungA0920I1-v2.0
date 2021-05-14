@@ -136,13 +136,6 @@ public class UserServlet extends HttpServlet {
         userDAO.searchUser(country);
         request.setAttribute("user", country);
         request.getRequestDispatcher("user/search.jsp").forward(request, response);
-
     }
 
-
-
-//    int id = Integer.parseInt(request.getParameter("id"));
-//    IUserDAO userDAO = new UserDAOImpl();
-//        userDAO.deleteUser(id);
-//        response.sendRedirect("list");
 }
