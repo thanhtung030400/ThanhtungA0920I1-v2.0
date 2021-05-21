@@ -68,7 +68,7 @@ public class Villa extends Services {
     }
 
     @Override
-    void showInfor() {
+    public void showInfor() {
         System.out.println("NameService:"+this.getServiceName() +
                 "rent type" + this.getRenType() +
                 "usable area" + this.getUsableArea()+

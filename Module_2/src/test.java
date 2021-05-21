@@ -1,40 +1,23 @@
-import b16.IO_text_file.thuc_hanh.add_number_in_file_text.ReadFileExample;
-
-import java.io.*;
-import java.util.Random;
 import java.util.Scanner;
 
 public class test {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("The amount invested: ");
+        double amount = scanner.nextDouble();
+        System.out.print("Annual interest rate:");
+        double annualInterestRate = scanner.nextDouble();
+        double monthlyInterestRate = annualInterestRate / 1200;
 
-        int lines = 0;
-        int words = 0;
-        int characters = 0;
-
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\ThanhtungA0920I1v2.0\\Module_2\\src\\text"));
-            String line = bufferedReader.readLine();
-            while (line != null){
-                lines ++;
-                String[] word = line.split(" ");
-                words += word.length;
-                for (String word1:word){
-                    characters += word1.length();
-                }line= bufferedReader.readLine();
-
-            }
-            System.out.println("number of lines" + lines);
-            System.out.println("number of words" + words);
-            System.out.println("number of characters" + characters);
-            bufferedReader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        // Print a table that displays future value for the years from 1 to 30
+        System.out.println("Years     Future Value"); // Table header
+        for (int i= 1; i <= 30; i++) {
+            System.out.printf("%-10d", i);
+            System.out.printf("%11.2f\n", futureInvestmentValue(amount, monthlyInterestRate, i));
         }
     }
 
-
+    public static double futureInvestmentValue(double investmentAmount, double monthlyInterestRate, int years) {
+        return investmentAmount * Math.pow(1 + monthlyInterestRate, years * 12);
     }
-
-
+}
