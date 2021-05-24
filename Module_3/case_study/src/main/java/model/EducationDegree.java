@@ -1,4 +1,4 @@
-package model.employee;
+package model;
 
 public class EducationDegree {
     private int educationDegreeId;

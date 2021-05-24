@@ -1,6 +1,6 @@
 package dao;
 
-import model.service.ServiceType;
+import model.ServiceType;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -39,7 +39,7 @@ public class ServiceTypeDAO {
             while (resultSet.next()){
                 int serviceTypeId = resultSet.getInt("service_type_id");
                 String serviceTypeName = resultSet.getString("service_type_name");
-//                serviceTypeList.add(new ServiceType(serviceTypeId, serviceTypeName));
+                serviceTypeList.add(new ServiceType(serviceTypeId, serviceTypeName));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -69,7 +69,7 @@ public class ServiceTypeDAO {
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()){
                 String serviceTypeName = resultSet.getString("service_type_name");
-//                serviceType = new ServiceType(serviceTypeId, serviceTypeName);
+                serviceType = new ServiceType(serviceTypeId, serviceTypeName);
             }
         } catch (SQLException e) {
             e.printStackTrace();

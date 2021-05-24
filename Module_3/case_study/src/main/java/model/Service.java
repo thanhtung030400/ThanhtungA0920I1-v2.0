@@ -1,6 +1,6 @@
-package model.service;
+package model;
 
-public abstract class Service {
+public class Service {
     private int serviceId;
     private String serviceName;
     private int serviceArea;

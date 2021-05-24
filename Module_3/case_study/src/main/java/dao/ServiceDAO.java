@@ -1,8 +1,8 @@
 package dao;
 
-import model.service.RentType;
-import model.service.Service;
-import model.service.ServiceType;
+import model.RentType;
+import model.Service;
+import model.ServiceType;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class ServiceDAO {
     private String jdbcPassword = "123456";
 
     private ServiceTypeDAO serviceTypeDAO = new ServiceTypeDAO();
-//    private RentTypeDAO rentTypeDAO = new RentTypeDAO();
+    private RentTypeDAO rentTypeDAO = new RentTypeDAO();
 
     private static final String INSERT_SERVICES = "INSERT INTO service (service_name, service_area, service_cost," +
             " service_max_people, rent_type_id, service_type_id, standard_room, description_other_convenience, pool_area" +
@@ -51,8 +51,8 @@ public class ServiceDAO {
             statement.setInt(2, service.getServiceArea());
             statement.setDouble(3, service.getServiceCost());
             statement.setInt(4, service.getServiceMaxPeople());
-//            statement.setInt(5, service.getRentType().getRentTypeId());
-//            statement.setInt(6, service.getServiceType().getServiceTypeId());
+            statement.setInt(5, service.getRentType().getRentTypeId());
+            statement.setInt(6, service.getServiceType().getServiceTypeId());
             statement.setString(7, service.getStandardRoom());
             statement.setString(8, service.getDescriptionOtherConvenience());
             statement.setDouble(9, service.getPoolArea());
@@ -88,14 +88,14 @@ public class ServiceDAO {
                 int serviceArea = resultSet.getInt("service_area");
                 double serviceCost = resultSet.getDouble("service_cost");
                 int serviceMaxPeople = resultSet.getInt("service_max_people");
-//                RentType rentType = rentTypeDAO.getRentTypeById(resultSet.getInt("rent_type_id"));
+                RentType rentType = rentTypeDAO.getRentTypeById(resultSet.getInt("rent_type_id"));
                 ServiceType serviceType = serviceTypeDAO.getServiceTypeById(resultSet.getInt("service_type_id"));
                 String standardRoom = resultSet.getString("standard_room");
                 String descriptionOtherConvenience = resultSet.getString("description_other_convenience");
                 double poolArea = resultSet.getDouble("pool_area");
                 int numberOfFloor = resultSet.getInt("number_of_floors");
-//                serviceList.add(new Service(serviceId, serviceName, serviceArea, serviceCost, serviceMaxPeople, rentType,
-//                        serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloor));
+                serviceList.add(new Service(serviceId, serviceName, serviceArea, serviceCost, serviceMaxPeople, rentType,
+                        serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloor));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -129,14 +129,14 @@ public class ServiceDAO {
                 int serviceArea = resultSet.getInt("service_area");
                 double serviceCost = resultSet.getDouble("service_cost");
                 int serviceMaxPeople = resultSet.getInt("service_max_people");
-//                RentType rentType = rentTypeDAO.getRentTypeById(resultSet.getInt("rent_type_id"));
+                RentType rentType = rentTypeDAO.getRentTypeById(resultSet.getInt("rent_type_id"));
                 ServiceType serviceType = serviceTypeDAO.getServiceTypeById(resultSet.getInt("service_type_id"));
                 String standardRoom = resultSet.getString("standard_room");
                 String descriptionOtherConvenience = resultSet.getString("description_other_convenience");
                 double poolArea = resultSet.getDouble("pool_area");
                 int numberOfFloor = resultSet.getInt("number_of_floors");
-//                service = new Service(serviceId, serviceName, serviceArea, serviceCost, serviceMaxPeople, rentType,
-//                        serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloor);
+                service = new Service(serviceId, serviceName, serviceArea, serviceCost, serviceMaxPeople, rentType,
+                        serviceType, standardRoom, descriptionOtherConvenience, poolArea, numberOfFloor);
 
             }
         } catch (SQLException e) {
